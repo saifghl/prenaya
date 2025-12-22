@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../../logo.svg'; // Using existing logo.svg as placeholder for logo.png
+import logo from './WhoAreWe/assets/images/logo-png.JPG';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 
@@ -12,7 +12,6 @@ const Footer = () => {
         <div className="footer-col logo-section">
           <div className="footer-logo">
             <img src={logo} alt="Prenaya Logo" />
-            <span className="logo-text">Prenaya</span>
           </div>
           <p className="footer-description">
             Delivering smart, reliable digital solutions that simplify processes and power business growth.
@@ -57,7 +56,7 @@ const Footer = () => {
             <MdLocationOn className="contact-icon" />
             <div>
               <strong>Location:</strong>
-              <p>Yeola, Nashik, Maharashtra<br/>Kopargaon, Ahmednagar, Maharashtra</p>
+              <p>Yeola, Nashik, Maharashtra<br />Kopargaon, Ahmednagar, Maharashtra</p>
             </div>
           </div>
         </div>

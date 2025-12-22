@@ -34,15 +34,9 @@
 }
 
 .footer-logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.logo-text {
-  font-size: 24px;
-  font-weight: 700;
-  color: #005a8d;
-  /* Prenaya blue approx */
+  height: 60px;
+  /* Increased from 40px to accommodate text in logo */
+  margin-right: 0;
 }
 
 .footer-description {
