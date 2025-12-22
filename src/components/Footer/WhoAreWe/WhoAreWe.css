@@ -1,0 +1,343 @@
+/* HERO SECTION */
+.wp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: linear-gradient(135deg, #2b0a3d, #5a2a82);
+  color: #fff;
+}
+
+.wp-hero-content {
+  max-width: 50%;
+}
+
+.wp-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.wp-hero h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.wp-hero p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #e6dff1;
+}
+
+.wp-btn {
+  padding: 10px 24px;
+  border: 1px solid #9ad9d0;
+  background: transparent;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.wp-btn:hover {
+  background: #9ad9d0;
+  color: #2b0a3d;
+}
+
+.wp-hero-image img {
+  width: 420px;
+  border-radius: 12px;
+}
+
+/* MEET PRENAYA */
+.wp-meet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 80px;
+  background: #fff;
+}
+
+.wp-meet-text {
+  width: 50%;
+}
+
+.wp-meet-text h2 {
+  color: #6fb7b1;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.wp-meet-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.wp-meet-image img {
+  width: 420px;
+  border-radius: 10px;
+}
+/* MISSION & VISION */
+.mv-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+  background: #f9f9f9;
+}
+
+.mv-card {
+  background: #fff;
+  padding: 30px;
+  width: 380px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mv-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.mv-card h3 {
+  color: #5a2a82;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mv-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+/* OUR EXPERTISE */
+.expertise-section {
+  padding: 80px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #5a2a82;
+  margin-bottom: 50px;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.expertise-card {
+  background: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-8px);
+}
+
+.expertise-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.expertise-card h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.expertise-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #666;
+}
+/* WHY CHOOSE US */
+.choose-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background: #f4f6fb;
+}
+
+.choose-text {
+  width: 50%;
+}
+
+.choose-text h2 {
+  font-size: 30px;
+  color: #5a2a82;
+  margin-bottom: 20px;
+}
+
+.choose-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.choose-text li {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.choose-image img {
+  width: 420px;
+  border-radius: 14px;
+}
+/* OUR JOURNEY */
+.journey-section {
+  padding: 80px;
+  background: #fff;
+  text-align: center;
+}
+
+.journey-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.journey-card {
+  background: #f9f9f9;
+  padding: 30px;
+  width: 220px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.journey-card h3 {
+  color: #5a2a82;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.journey-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+/* MEET TEAM */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.meet-team-section {
+  font-family: "Poppins", sans-serif;
+  padding: 80px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.meet-title {
+  font-size: 32px;
+  color: #5a2a82;
+  margin-bottom: 10px;
+}
+
+.meet-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-initial {
+  width: 70px;
+  height: 70px;
+  background: #220440;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  font-size: 13px;
+  color: #6cb5b1;
+  margin-bottom: 15px;
+}
+
+.team-description {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.team-socials a {
+  color: #220440;
+  margin: 0 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.team-socials a:hover {
+  opacity: 0.7;
+}
+
+/* CALL TO ACTION */
+.cta-section { 
+  background-color: #220440; /* dark purple */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #220440;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #220440;
+}

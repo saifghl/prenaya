@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.meet-team-section {
+  font-family: "Poppins", sans-serif;
+  padding: 80px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.meet-title {
+  font-size: 32px;
+  color: #5a2a82;
+  margin-bottom: 10px;
+}
+
+.meet-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* TeamCard styling */
+.team-card {
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-initial {
+  width: 70px;
+  height: 70px;
+  background: #220440;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  font-size: 13px;
+  color: #6cb5b1;
+  margin-bottom: 15px;
+}
+
+.team-description {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.team-socials a {
+  color: #220440;
+  margin: 0 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.team-socials a:hover {
+  opacity: 0.7;
+}
