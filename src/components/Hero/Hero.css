@@ -1,0 +1,118 @@
+.hero-section {
+    background-color: #220440;
+    color: #fff;
+    /* padding: 60px 50px; */
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container-vertical {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    /* Explicitly force left alignment */
+}
+
+.hero-label {
+    color: #55A2A7;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    /* Reduced from 20px */
+}
+
+.hero-container-vertical h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    /* Reduced from 40px to 5px */
+    max-width: 85%;
+}
+
+.highlight-text {
+    color: #55A2A7;
+}
+
+.hero-split-layout {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    /* Align top */
+}
+
+.hero-text-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-subheader {
+    font-size: 22px;
+    color: #55A2A7;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+.hero-description {
+    font-size: 21px;
+    color: #e0e0e0;
+    /* line-height: 1.6; */
+    margin-bottom: 40px;
+    max-width: 98%;
+}
+
+.cta-button {
+    background-color: transparent;
+    border: 2px solid #55A2A7;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 17px;
+    /* Slightly rounded per 0.5 request */
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #55A2A7;
+    color: #220440;
+}
+
+.hero-footer-text {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #55A2A7;
+}
+
+.hero-image-column {
+    flex: 1;
+}
+
+.hero-image-column img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .hero-split-layout {
+        flex-direction: column;
+    }
+
+    .hero-container-vertical h1 {
+        font-size: 32px;
+        max-width: 100%;
+    }
+}
