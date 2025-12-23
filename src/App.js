@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import WhyUs from './components/WhyUs/WhyUs';
+import WhatWeProvide from './components/WhatWeProvide/WhatWeProvide';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/why-us" element={<WhyUs />} />
+          <Route path="/what-we-provide" element={<WhatWeProvide />} />
         </Routes>
         <Footer />
       </div>
