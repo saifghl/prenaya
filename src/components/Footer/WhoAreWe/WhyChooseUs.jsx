@@ -2,7 +2,7 @@ import React from "react";
 import "./WhoAreWe.css";
 
 // image
-import chooseImg from "./assets/images/why-choose.jpeg";
+import chooseImg from "./assets/images/hero-cloud.jpeg";
 
 const WhyChooseUs = () => {
   return (
