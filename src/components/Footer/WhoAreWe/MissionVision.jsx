@@ -2,8 +2,8 @@ import React from "react";
 import "./WhoAreWe.css";
 
 // images
-import missionImg from "./assets/images/building.jpeg";
-import visionImg from "./assets/images/building.jpeg";
+import missionImg from "./assets/images/mission.jpeg";
+import visionImg from "./assets/images/vision.jpeg";
 
 const MissionVision = () => {
   return (
