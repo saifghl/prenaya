@@ -1,9 +1,9 @@
 import React from "react";
-
-// CSS
 import "./WhoAreWe.css";
 
-// Components
+import heroImage from "./assets/images/hero-cloud.jpeg";
+import logo from "./assets/images/logo.png";
+
 import MeetPrenaya from "./MeetPrenaya";
 import MissionVision from "./MissionVision";
 import OurExpertise from "./OurExpertise";
@@ -12,54 +12,67 @@ import OurJourney from "./OurJourney";
 import MeetTeam from "./MeetTeam";
 import CallToAction from "./CallToAction";
 
-// Images
-import heroImage from "../../assets/images/hero-cloud.jpg";
-import buildingImage from "../../assets/images/building.jpg";
-import logoImage from "../../assets/images/logo.png";
-
 const WhoAreWe = () => {
   return (
-    <div className="who-are-we-page">
+    <div>
 
       {/* HERO SECTION */}
       <section className="wp-hero">
         <div className="wp-hero-content">
-          <img src={logoImage} alt="Prenaya Logo" className="wp-logo" />
-          <h1>Welcome to Prenaya</h1>
+          <img src={logo} alt="Prenaya Logo" className="wp-logo" />
+
+          <h1>We Build the Future of Digital</h1>
+
           <p>
-            Delivering smart, reliable digital solutions that simplify processes
-            and power business growth.
+            Prenaya is built with a clear mission – to help businesses embrace
+            digital transformation and unlock their full potential through
+            innovative technology solutions.
           </p>
-          <a href="#meetprenaya">
-            <button className="wp-btn">Know More</button>
-          </a>
+
+          <button className="wp-btn">Learn More</button>
         </div>
+
         <div className="wp-hero-image">
-          <img src={heroImage} alt="Hero" />
+          <img src={heroImage} alt="Cloud Technology" />
         </div>
       </section>
 
-      {/* MEET PRENAYA */}
-      <MeetPrenaya image={buildingImage} />
+      {/* SECTION NAVIGATION (like screenshot) */}
+      <div className="whoarewe-tabs">
+        <a href="#meet-prenaya">Meet Prenaya</a>
+        <a href="#mission-vision">Mission & Vision</a>
+        <a href="#expertise">Our Expertise</a>
+        <a href="#why-choose-us">Why Choose Us</a>
+        <a href="#journey">Our Journey</a>
+        <a href="#team">Meet Team</a>
+      </div>
 
-      {/* MISSION & VISION */}
-      <MissionVision />
+      {/* PAGE CONTENT */}
+      <section id="meet-prenaya">
+        <MeetPrenaya />
+      </section>
 
-      {/* OUR EXPERTISE */}
-      <OurExpertise />
+      <section id="mission-vision">
+        <MissionVision />
+      </section>
 
-      {/* WHY CHOOSE US */}
-      <WhyChooseUs />
+      <section id="expertise">
+        <OurExpertise />
+      </section>
 
-      {/* OUR JOURNEY */}
-      <OurJourney />
+      <section id="why-choose-us">
+        <WhyChooseUs />
+      </section>
 
-      {/* MEET TEAM */}
-      <MeetTeam />
+      <section id="journey">
+        <OurJourney />
+      </section>
 
-      {/* CALL TO ACTION */}
+      <section id="team">
+        <MeetTeam />
+      </section>
+
       <CallToAction />
-
     </div>
   );
 };

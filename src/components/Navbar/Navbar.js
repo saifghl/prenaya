@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../Footer/WhoAreWe/assets/images/logo.png'; // Implementing path to existing logo
+import logo from '../Footer/WhoAreWe/assets/images/logo.png';
 
 const Navbar = () => {
     return (
@@ -11,14 +11,15 @@ const Navbar = () => {
                     <img src={logo} alt="Prenaya" />
                 </Link>
             </div>
+
             <ul className="navbar-links">
                 <li><Link to="/">Home</Link></li>
-                <li><a href="#who-are-we">Who Are We</a></li>
-                
+                <li><Link to="/who-are-we">Who Are We</Link></li>
                 <li><Link to="/what-we-provide">What We Provide</Link></li>
-                <li><Link to="/why-us">Why US</Link></li>
+                <li><Link to="/why-us">Why Us</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
+
             <div className="navbar-actions">
                 <Link to="/login">
                     <button className="login-btn">Login</button>
