@@ -3,7 +3,6 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
-<<<<<<< HEAD
 import WhyUs from './components/WhyUs/WhyUs';
 import WhatWeProvide from './components/WhatWeProvide/WhatWeProvide';
 
@@ -20,18 +19,6 @@ function App() {
         <Footer />
       </div>
     </Router>
-=======
-// import WhoAreWe from './components/Footer/WhoAreWe/WhoAreWe';
-
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <WhoAreWe />
-      <Footer />
-    </div>
->>>>>>> 270fe0a01f2fbc25f5c43f4339a23397445369a1
   );
 }
 
