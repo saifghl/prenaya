@@ -9,9 +9,7 @@ import WhatWeProvide from './components/WhatWeProvide/WhatWeProvide';
 // Admin Content Management Imports
 import ContentManagementHome from './components/ContentManagement/Home';
 import AddHomeContent from './components/ContentManagement/AddHomeContent';
-import WhoAreWe from './components/Footer/WhoAreWe/WhoAreWe';
-
-
+import WhoWeAre from './components/ContentManagement/WhoWeAre';
 import AddWhoWeAreContent from './components/ContentManagement/AddWhoWeAreContent';
 import AdminWhyUs from './components/ContentManagement/WhyUs'; // Renamed to avoid alias conflict
 import AddWhyUsContent from './components/ContentManagement/AddWhyUsContent';
@@ -28,13 +26,11 @@ function App() {
         <Navbar />
         <Routes>
           {/* Public Routes */}
-              <Route path="/" element={<Hero />} />
-<Route path="/who-are-we" element={<WhoAreWe />} />
-<Route path="/why-us" element={<WhyUs />} />
-<Route path="/what-we-provide" element={<WhatWeProvide />} />
-<Route path="/login" element={<Login />} />
-<Route path="/contact" element={<Contact />} />
-
+          <Route path="/" element={<Hero />} />
+          <Route path="/why-us" element={<WhyUs />} />
+          <Route path="/what-we-provide" element={<WhatWeProvide />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* Admin Routes */}
           <Route path="/admin/content-management" element={<ContentManagementHome />} />
