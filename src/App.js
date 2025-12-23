@@ -3,13 +3,18 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-<<<<<<< HEAD
->>>>>>> 2c4cd6b32475735906ab619b5880fb54bd9688c7
 import WhyUs from './components/WhyUs/WhyUs';
 import WhatWeProvide from './components/WhatWeProvide/WhatWeProvide';
+
+// Admin Content Management Imports
+import ContentManagementHome from './components/ContentManagement/Home';
+import AddHomeContent from './components/ContentManagement/AddHomeContent';
+import WhoWeAre from './components/ContentManagement/WhoWeAre';
+import AddWhoWeAreContent from './components/ContentManagement/AddWhoWeAreContent';
+import AdminWhyUs from './components/ContentManagement/WhyUs'; // Renamed to avoid alias conflict
+import AddWhyUsContent from './components/ContentManagement/AddWhyUsContent';
+import ContactUs from './components/ContentManagement/ContactUs';
+import AddContactUsContent from './components/ContentManagement/AddContactUsContent';
 
 function App() {
   return (
@@ -17,63 +22,24 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
+          {/* Public Routes */}
           <Route path="/" element={<Hero />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/what-we-provide" element={<WhatWeProvide />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-<<<<<<< HEAD
-=======
-=======
-// import WhoAreWe from './components/Footer/WhoAreWe/WhoAreWe';
-=======
-import WhoAreWe from './components/Footer/WhoAreWe/WhoAreWe';
-import ContentManagementHome from './components/ContentManagement/Home';
-import AddHomeContent from './components/ContentManagement/AddHomeContent';
-import WhoWeAre from './components/ContentManagement/WhoWeAre';
-import AddWhoWeAreContent from './components/ContentManagement/AddWhoWeAreContent';
-import WhyUs from './components/ContentManagement/WhyUs';
-import AddWhyUsContent from './components/ContentManagement/AddWhyUsContent';
-import ContactUs from './components/ContentManagement/ContactUs';
-import AddContactUsContent from './components/ContentManagement/AddContactUsContent';
->>>>>>> Stashed changes
 
-const LandingPage = () => {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <WhoAreWe />
-      <Footer />
-<<<<<<< Updated upstream
-    </div>
->>>>>>> 270fe0a01f2fbc25f5c43f4339a23397445369a1
-=======
-    </>
-  );
-};
-
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
+          {/* Admin Routes */}
           <Route path="/admin/content-management" element={<ContentManagementHome />} />
           <Route path="/admin/content-management/add" element={<AddHomeContent />} />
           <Route path="/admin/content-management/who-we-are" element={<WhoWeAre />} />
           <Route path="/admin/content-management/who-we-are/add" element={<AddWhoWeAreContent />} />
-          <Route path="/admin/content-management/why-us" element={<WhyUs />} />
+          <Route path="/admin/content-management/why-us" element={<AdminWhyUs />} />
           <Route path="/admin/content-management/why-us/add" element={<AddWhyUsContent />} />
           <Route path="/admin/content-management/contact" element={<ContactUs />} />
           <Route path="/admin/content-management/contact/add" element={<AddContactUsContent />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
->>>>>>> Stashed changes
->>>>>>> 2c4cd6b32475735906ab619b5880fb54bd9688c7
   );
 }
 
