@@ -13,13 +13,13 @@ import MeetTeam from "./MeetTeam";
 import CallToAction from "./CallToAction";
 
 // Images
-import heroImage from "./assets/images/hero-cloud.jpeg";
-import buildingImage from "./assets/images/building.jpeg";
-import logoImage from "./assets/images/logo.png";
+import heroImage from "../../assets/images/hero-cloud.jpg";
+import buildingImage from "../../assets/images/building.jpg";
+import logoImage from "../../assets/images/logo.png";
 
 const WhoAreWe = () => {
   return (
-    <div className="who-are-we-page" id="who-are-we">
+    <div className="who-are-we-page">
 
       {/* HERO SECTION */}
       <section className="wp-hero">

@@ -2,10 +2,10 @@ import React from "react";
 import "./WhoAreWe.css";
 
 // images
-import webImg from "./assets/images/hero-cloud.jpeg";
-import mobileImg from "./assets/images/hero-cloud.jpeg";
-import cloudImg from "./assets/images/hero-cloud.jpeg";
-import uiuxImg from "./assets/images/hero-cloud.jpeg";
+import webImg from "./assets/images/web.jpeg";
+import mobileImg from "./assets/images/mobile.jpeg";
+import cloudImg from "./assets/images/cloud.jpeg";
+import uiuxImg from "./assets/images/uiux.jpeg";
 
 const OurExpertise = () => {
   return (
