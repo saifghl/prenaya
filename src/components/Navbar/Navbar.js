@@ -16,10 +16,12 @@ const Navbar = () => {
                 <li><a href="#who-are-we">Who Are We</a></li>
                 <li><Link to="/what-we-provide">What We Provide</Link></li>
                 <li><Link to="/why-us">Why US</Link></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="navbar-actions">
-                <button className="login-btn">Login</button>
+                <Link to="/login">
+                    <button className="login-btn">Login</button>
+                </Link>
             </div>
         </nav>
     );

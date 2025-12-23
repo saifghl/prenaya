@@ -16,6 +16,9 @@ import AddWhyUsContent from './components/ContentManagement/AddWhyUsContent';
 import ContactUs from './components/ContentManagement/ContactUs';
 import AddContactUsContent from './components/ContentManagement/AddContactUsContent';
 
+import Login from './components/Login/Login';
+import Contact from './components/Contact/Contact';
+
 function App() {
   return (
     <Router>
@@ -26,6 +29,8 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/what-we-provide" element={<WhatWeProvide />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* Admin Routes */}
           <Route path="/admin/content-management" element={<ContentManagementHome />} />
