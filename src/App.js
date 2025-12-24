@@ -20,6 +20,13 @@ import Login from './components/Login/Login';
 import Contact from './components/Contact/Contact';
 import WhoAreWe from './components/Footer/WhoAreWe/WhoAreWe';
 
+import Dashboard from "./components/Dashboard/Dashboard";
+import Leads from "./components/Leads/Leads management";
+import Notification from "./components/Notification/Notification";
+import Services from "./components/Services/Add Services";
+
+
+
 function App() {
   return (
     <Router>
@@ -43,7 +50,13 @@ function App() {
           <Route path="/admin/content-management/why-us/add" element={<AddWhyUsContent />} />
           <Route path="/admin/content-management/contact" element={<ContactUs />} />
           <Route path="/admin/content-management/contact/add" element={<AddContactUsContent />} />
-        </Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/leads" element={<Leads />} />
+
+          
+          </Routes>
         <Footer />
       </div>
     </Router>

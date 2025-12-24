@@ -1,0 +1,277 @@
+/* Reuse general variables from previous files or define specific ones */
+.notification-header {
+    margin-bottom: 32px;
+}
+
+.notification-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    background-color: #F7FAFC;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.tab-btn {
+    padding: 8px 24px;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #718096;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    background-color: white;
+    color: #1A202C;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+}
+
+.filter-select {
+    padding: 8px 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #4A5568;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Notification List */
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.notification-item {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners mainly on right */
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: 4px solid #CBD5E0;
+    /* Default border color, overridden inline */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+    gap: 16px;
+    transition: transform 0.2s;
+}
+
+.notification-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.notification-icon-wrapper {
+    font-size: 20px;
+    margin-top: 2px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7FAFC;
+    border-radius: 50%;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2D3748;
+    margin: 0 0 4px 0;
+}
+
+.notification-desc {
+    font-size: 14px;
+    color: #4A5568;
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+}
+
+.notification-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: #F7FAFC;
+    color: #4A5568;
+}
+
+/* Specific Tag Colors */
+.tag.lead {
+    background-color: #EBF8FF;
+    color: #3182CE;
+}
+
+.tag.high-value {
+    background-color: #EBF8FF;
+    color: #2B6CB0;
+}
+
+.tag.system-alert {
+    background-color: #FFF5F5;
+    color: #E53E3E;
+}
+
+.tag.critical {
+    background-color: #4A5568;
+    color: white;
+}
+
+.tag.support {
+    background-color: #FAF5FF;
+    color: #805AD5;
+}
+
+.tag.system {
+    background-color: #EDF2F7;
+    color: #4A5568;
+}
+
+/* Time */
+.notification-time {
+    font-size: 12px;
+    color: #A0AEC0;
+    white-space: nowrap;
+    margin-top: 4px;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.load-more-btn {
+    background: none;
+    border: none;
+    color: #805AD5;
+    /* Accent Purple */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .notification-item {
+        flex-direction: column;
+    }
+
+    .notification-time {
+        align-self: flex-start;
+        margin-top: 0;
+        margin-bottom: 8px;
+        order: -1;
+        /* Move time to top on mobile if needed, or keep at bottom */
+    }
+}
+
+/* Top Header Styles */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+.top-search-input {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #4A5568;
+    background-color: white;
+}
+
+.top-search-input::placeholder {
+    color: #A0AEC0;
+}
+
+.search-icon-top {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Reusing icon-wrapper-header from Dashboard if not available, or defining here */
+.icon-wrapper-header {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.icon-wrapper-header:hover {
+    background-color: #EDF2F7;
+}
+
+.header-icon {
+    font-size: 20px;
+    color: #718096;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}

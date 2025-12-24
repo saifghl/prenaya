@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaThLarge, FaServicestack, FaGlobe, FaUserFriends, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
 import './Sidebar.css';
-import logo from '../../logo.svg'; // Assuming logo is in src/logo.svg
+//import logo from '../../logo.svg'; // Assuming logo is in src/logo.svg
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);

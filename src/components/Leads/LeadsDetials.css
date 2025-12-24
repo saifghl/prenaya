@@ -1,0 +1,246 @@
+.lead-details-container {
+    padding: 24px;
+    background-color: #F7FAFC;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.details-header {
+    margin-bottom: 24px;
+}
+
+.details-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1A202C;
+    margin: 0 0 8px 0;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1A202C;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.timestamp svg {
+    color: #000;
+}
+
+/* Common Card Style */
+.details-section-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    border: 1px solid #EDF2F7;
+}
+
+/* Status Section */
+.status-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.status-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4A5568;
+    margin-bottom: 8px;
+}
+
+.status-select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #718096;
+    /* Placeholder color like image */
+    background-color: #F8F9FA;
+    outline: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid #E2E8F0;
+    color: #1A202C;
+}
+
+.btn-outline:hover {
+    background: #F7FAFC;
+}
+
+.btn-primary {
+    background: #553C9A;
+    /* Deep Purple */
+    border: 1px solid #553C9A;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #44337A;
+}
+
+/* Contact Info Section */
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 12px 16px;
+    background-color: #F8F9FA;
+    /* Very light grey/purple tint */
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #718096;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #A0AEC0;
+}
+
+.form-input.has-icon {
+    padding-left: 40px;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #805AD5;
+}
+
+.required-star {
+    color: #E53E3E;
+    margin-left: 2px;
+}
+
+/* Message Content */
+.message-box {
+    background-color: #F8F9FA;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2D3748;
+}
+
+.message-box p {
+    margin-bottom: 16px;
+}
+
+.message-list {
+    margin: 16px 0;
+    padding-left: 20px;
+}
+
+.message-list li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.details-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    color: #805AD5;
+    /* Light purple */
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background: none;
+    color: #805AD5;
+    /* Match design purple */
+    padding: 0;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.lead-id {
+    font-size: 14px;
+    color: #805AD5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .status-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .status-select,
+    .action-buttons,
+    .btn {
+        width: 100%;
+        max-width: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
