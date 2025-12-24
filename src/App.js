@@ -18,6 +18,7 @@ import AddContactUsContent from './components/ContentManagement/AddContactUsCont
 
 import Login from './components/Login/Login';
 import Contact from './components/Contact/Contact';
+import WhoAreWe from './components/Footer/WhoAreWe/WhoAreWe';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Hero />} />
+          <Route path="/who-we-are" element={<WhoAreWe />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/what-we-provide" element={<WhatWeProvide />} />
           <Route path="/login" element={<Login />} />
